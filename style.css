@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(34, 31, 31);
+    text-align: center;
+}
+.heading{
+   margin-top: 4vmin;
+   font-size: 10vmin;
+   color: rgb(240, 214, 129);
+   font-family: 'forte';
+}
+.container{
+    height: 60vh;
+    border-radius: 4vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 53vmin;
+    width: 50vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6vmin;
+    border: .6vmin solid #dce2e6;
+    border-radius: 2vmin;
+}
+.box {
+    height: 15vmin;
+    width: 15vmin;
+    border-radius: 2vmin;
+    border: none;
+    font-size: 14vmin;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.box:hover{
+    border: .4vmin solid rgb(117, 215, 239);   
+}
+#restart{
+    height: 5vmin;
+    width: 10vmin;
+    border-radius: 9vmin;
+    font-size: 2vmin;
+    cursor: pointer;
+    background: linear-gradient(45deg, #91edee,rgb(40, 222, 222) , #008cff);
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+#restart span {
+    position: relative;
+    z-index: 1;
+}
+#restart::before {
+    content: "";
+    position: absolute;
+    inset: .2vmin;
+    background: #201f1f;
+    border-radius: 9vmin;
+    transition: 0.5s;
+  }
+#restart:hover::before {
+    opacity: 0.7;
+  }
+#restart::after {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background:linear-gradient(45deg, #91edee,rgb(40, 222, 222) , #008cff);
+    border-radius: 10vmin;
+    transition: 0.5s;
+    opacity: 0;
+    filter: blur(20px);
+  }
+#restart:hover:after {
+    opacity: 1;
+  }
+#new{
+    height: 8vmin;
+    width: 15vmin;
+    border-radius: 2vmin;
+    font-size: 3vmin;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(45deg, #bebc3a,rgb(233, 176, 52) , #fa6b05);
+    animation: bounce 300ms infinite  ease-in-out alternate ;
+    cursor: pointer;
+}
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.hide {
+    display: none;
+    
+}
+#msg {
+    color: #f3f376;
+    font-size: 9vmin;
+    font-family:cursive ;
+}
+@keyframes bounce{
+
+    100% {
+     transform: translateY(12px);
+     }
+}
+.slideslice{
+    height: 10vmin;
+    width: 1vmin;
+}
+ 
