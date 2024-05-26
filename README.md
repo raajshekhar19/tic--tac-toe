@@ -1,2 +1,2 @@
 # tic--tac-toe
-it a game which i made by wathching the onine youtube vedios
+it is  a game which I made by wathching the onine youtube vedios
